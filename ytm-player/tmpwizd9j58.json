@@ -1,0 +1,11 @@
+{
+    "accept": "*/*",
+    "accept-encoding": "gzip, deflate",
+    "authorization": "SAPISIDHASH 1789022938_79273c985d75889f482a9fc63315dd50a9de426e",
+    "content-encoding": "gzip",
+    "content-type": "application/json",
+    "cookie": "YSC=; VISITOR_INFO1_LIVE=; VISITOR_PRIVACY_METADATA=; __Secure-ROLLOUT_TOKEN=; APISID=; HSID=; SAPISID=; SID=; SSID=; __Secure-1PAPISID=; __Secure-1PSID=; __Secure-3PAPISID=; PREF=; SIDCC=; __Secure-1PSIDCC=; __Secure-1PSIDTS=; __Secure-3PSIDCC=; __Secure-3PSIDTS=",
+    "origin": "https://music.youtube.com",
+    "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:88.0) Gecko/20100101 Firefox/88.0",
+    "x-goog-authuser": "0"
+}
