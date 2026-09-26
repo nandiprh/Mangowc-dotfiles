@@ -1,0 +1,11 @@
+[Unit]
+Description=nixGL GPU setup
+Before=graphical-session.target
+
+[Service]
+Type=oneshot
+ExecStart=/nix/store/683nm8f1llzag0a64lhxac0bci4mixzg-non-nixos-gpu/bin/non-nixos-gpu-setup
+RemainAfterExit=true
+
+[Install]
+WantedBy=default.target
