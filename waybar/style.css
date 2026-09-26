@@ -1,0 +1,249 @@
+* {
+    font-family: "JetBrains Mono Nerd Font", "FiraCode Nerd Font", "DejaVu Sans Mono", monospace;
+    font-size: 15px;
+    font-weight: 500;
+    min-height: 0;
+}
+
+window#waybar {
+    background: rgba(26, 27, 38, 0.82);
+    color: #c0caf5;
+    border: none;
+    border-radius: 15px;
+    box-shadow: none;
+    opacity: 1.0;
+}
+
+#custom-mango_tags1,
+#custom-mango_tags2,
+#custom-mango_tags3,
+#custom-mango_tags4,
+#custom-mango_tags5,
+#custom-mango_tags6,
+#custom-mango_tags7,
+#custom-mango_tags8,
+#custom-mango_tags9 {
+    margin: 0 0px;
+    min-width: 22px;
+    min-height: 22px;
+    padding: 0px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    background: transparent;
+    color: #565f77;
+    border: none;
+    box-shadow: none;
+    transition: all 0.15s ease;
+}
+
+#custom-mango_tags1.occupied,
+#custom-mango_tags2.occupied,
+#custom-mango_tags3.occupied,
+#custom-mango_tags4.occupied,
+#custom-mango_tags5.occupied,
+#custom-mango_tags6.occupied,
+#custom-mango_tags7.occupied,
+#custom-mango_tags8.occupied,
+#custom-mango_tags9.occupied {
+    color: #c0caf5;
+}
+
+#custom-mango_tags1.active,
+#custom-mango_tags2.active,
+#custom-mango_tags3.active,
+#custom-mango_tags4.active,
+#custom-mango_tags5.active,
+#custom-mango_tags6.active,
+#custom-mango_tags7.active,
+#custom-mango_tags8.active,
+#custom-mango_tags9.active {
+    background: transparent;
+    color: #7dcfff;
+    font-weight: 500;
+    box-shadow: none;
+}
+
+#custom-mango_tags1.urgent,
+#custom-mango_tags2.urgent,
+#custom-mango_tags3.urgent,
+#custom-mango_tags4.urgent,
+#custom-mango_tags5.urgent,
+#custom-mango_tags6.urgent,
+#custom-mango_tags7.urgent,
+#custom-mango_tags8.urgent,
+#custom-mango_tags9.urgent {
+    background: transparent;
+    color: #f7768e;
+}
+
+#custom-mango_focused {
+    min-width: 450px;
+    margin: 0;
+    padding: 0 15px;
+    border-radius: 0;
+    color: #c0caf5;
+    font-weight: 500;
+    background: transparent;
+    border: none;
+    letter-spacing: 0.5px;
+    font-size: 15px;
+}
+
+#custom-mango_focused.window-active {
+    color: #e0af68;
+}
+
+#custom-mango_focused.window-idle {
+    color: #565f77;
+}
+
+#custom-notify {
+    color: #7dcfff;
+    margin: 0 6px;
+    padding: 0 8px 0 16px;
+    font-weight: 600;
+    background: transparent;
+    border: none;
+    font-size: 15px;
+}
+
+#custom-notify.has-notifications {
+    color: #f7768e;
+    animation: blink 1s ease-in-out infinite;
+}
+
+#custom-notify.no-notifications {
+    color: #565f77;
+}
+
+#custom-sep1,
+#custom-sep2,
+#custom-sep3,
+#custom-sep4,
+#custom-sep5,
+#custom-sep6,
+#custom-sep7,
+#custom-sep8,
+#custom-sep {
+    color: #565f77;
+    margin: 0;
+    padding: 0;
+    min-width: 0;
+    font-weight: 500;
+    font-size: 15px;
+    border: none;
+}
+
+#cpu,
+#memory,
+#network,
+#custom-net,
+#custom-tuned,
+#wireplumber,
+#backlight,
+#battery {
+    background: transparent;
+    color: #c0caf5;
+    padding: 0 8px;
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    font-size: 15px;
+    transition: all 0.15s ease;
+}
+
+#clock {
+    background: transparent;
+    color: #c0caf5;
+    padding: 0 16px 0 8px;
+    margin: 0;
+    border: none;
+    border-radius: 10px;
+    font-size: 14px;
+    transition: all 0.15s ease;
+    box-shadow: none;
+    opacity: 1.0;
+}
+
+#cpu:hover,
+#memory:hover,
+#network:hover,
+#custom-net:hover,
+#custom-tuned:hover,
+#wireplumber:hover,
+#battery:hover,
+#backlight:hover,
+#clock:hover {
+    background: rgba(42, 44, 61, 0.50);
+    border-radius: 6px;
+}
+
+#cpu.warning,
+#memory.warning,
+#battery.warning {
+    color: #e0af68;
+}
+
+#cpu.critical,
+#memory.critical,
+#battery.critical {
+    color: #f7768e;
+    animation: blink 1s ease-in-out infinite;
+}
+
+#wireplumber.muted {
+    color: #565f77;
+}
+
+#battery.charging {
+    color: #7dcfff;
+}
+
+#custom-net.disconnected,
+#network.disconnected {
+    color: #f7768e;
+}
+
+#custom-net.wifi,
+#network.wifi {
+    color: #c0caf5;
+}
+
+#custom-net.ethernet,
+#network.ethernet {
+    color: #c0caf5;
+}
+
+#custom-tuned {
+    color: #9ece6a;
+}
+
+#custom-tuned.active {
+    color: #9ece6a;
+}
+
+#custom-tuned.inactive {
+    color: #e0af68;
+}
+
+tooltip {
+    background: rgba(26, 27, 38, 0.85);
+    border: 1px solid rgba(122, 162, 247, 0.3);
+    border-radius: 6px;
+    padding: 3px 3px;
+    color: #c0caf5;
+    box-shadow: none;
+}
+
+tooltip label {
+    color: #c0caf5;
+    font-size: 14px;
+    padding: 2px;
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0.4; }
+    100% { opacity: 1; }
+}
